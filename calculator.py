@@ -1,23 +1,13 @@
-num1 = int(input("Enter first number: "))
-num2 = int(input("Enter second number: "))
+def add(a, b):
+    return a + b
 
-operation = input("Choose operation (+, -, *, /): ")
+def subtract(a, b):
+    return a - b
 
-if operation == "+":
-    result = num1 + num2
-    print("Result:", result)
+def multiply(a, b):
+    return a * b
 
-elif operation == "-":
-    result = num1 - num2
-    print("Result:", result)
-
-elif operation == "*":
-    result = num1 * num2
-    print("Result:", result)
-
-elif operation == "/":
-    result = num1 / num2
-    print("Result:", result)
-
-else:
-    print("Invalid operation! Please try again.")
+def divide(a, b):
+    if b == 0:
+        return "Error"
+    return a / b
